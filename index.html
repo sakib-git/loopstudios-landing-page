@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <title>Frontend Mentor | Loopstudios landing page</title>
+    <link rel="stylesheet" href="./scr/output.css" />
+  </head>
+  <body>
+    <main>
+      <div class="bg-[url(../images/mobile/image-hero.jpg)] md:bg-[url(../images/desktop/image-hero.jpg)] h-[700px] mx-auto bg-no-repeat bg-cover bg-top">
+        <div class="max-w-[1120px] mx-auto flex flex-col gap-30">
+          <div class="relative flex justify-between items-center pt-10 px-5 lg:px-0">
+            <img src="images/logo.svg" alt="" />
+
+            <div class="navigation-container">
+              <div class="min-[700px]:hidden">
+                <img src="./images/logo.svg" alt="Loop studio logo">
+                <button class="nav-menu-close-btn">
+                  <svg width="25" height="25" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z" fill="#FFF" fill-rule="evenodd" /></svg>
+                </button>
+              </div>
+
+              <nav>
+                <div class="flex gap-5 text-white font-[alata]">
+                  <a class="link-hover relative" href="#">About</a>
+                  <a class="link-hover relative" href="#">Careers</a>
+                  <a class="link-hover relative" href="#">Events</a>
+                  <a class="link-hover relative" href="#">Products</a>
+                  <a class="link-hover relative" href="#">Support </a>
+                </div>
+              </nav>
+            </div>
+
+            <button class="menubtn">
+              <img class="w-8" src="images/icon-hamburger.svg" alt="" />
+            </button>
+          </div>
+          <div class="max-w-[1120px] px-5 lg:px-0">
+            <h1 class="max-w-[600px] uppercase text-white text-[length:clamp(2.825rem,2.3731rem+1.8077vw,4rem)] font-[Josefin-sans] border-2 p-9 leading-16">Immersive experiences that deliver</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative max-w-[1120px] mx-auto mt-15 px-5 lg:flex lg:gap-5 lg:overflow-hidden py-4 lg:px-0">
+        <div class="flex-1 max-lg:flex max-lg:justify-center">
+          <img src="images/desktop/image-interactive.jpg" alt="" />
+        </div>
+        <div class="lg:absolute flex-1 mt-15 text-center lg:text-start lg:bg-white lg:right-[-95px] lg:top-30 lg:max-w-[650px] lg:p-20">
+          <h2 class="lg:text-6xl text-[length:clamp(2.825rem,2.3731rem+1.8077vw,4rem)] uppercase leading-15">The leader in interactive VR</h2>
+          <p class="max-lg:text-[length:clamp(1.825rem,.3531rem+1.7077vw,3.7rem)] mt-6 font-[alata] text-(--pcolor)">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="max-w-[1120px] mx-auto mt-15 px-5 lg:px-0">
+          <div class="flex gap-6 flex-col items-center lg:flex-row lg:justify-between">
+            <h3 class="lg:text-4xl uppercase font-[Josefin-Sans] text-3xl">Our creations</h3>
+            <a class="max-md:absolute max-md:bottom-[-60px] border px-10 py-2 uppercase hover:bg-black hover:text-white font-[Josefin-Sans]" href="#">See all</a>
+          </div>
+        </div>
+        <div class="max-w-[1120px] mx-auto mt-15 px-5 lg:px-0">
+          <div class="flex flex-col gap-5 lg:grid lg:grid-cols-4">
+            <div class="group lg:flex lg:items-end bg-[url(../images/mobile/image-deep-earth.jpg)] lg:bg-[url(../images/desktop/image-deep-earth.jpg)] h-[200px] bg-no-repeat bg-top bg-cover lg:h-[450px] hover:opacity-30">
+              <h3 class="group-hover:text-[#292929] text-white max-w-[180px] text-4xl px-5 mt-26 uppercase leading-8 font-[josefin-sans] lg:mb-4">Deep earth</h3>
+            </div>
+
+            <div class="lg:flex lg:items-end bg-[url(../images/mobile/image-night-arcade.jpg)] lg:bg-[url(../images/desktop/image-night-arcade.jpg)] h-[200px] bg-no-repeat bg-top bg-cover lg:h-[450px] hover:opacity-20">
+              <h3 class="group-hover:text-[#292929] text-white max-w-[180px] text-4xl px-5 mt-26 uppercase leading-8 font-[josefin-sans] lg:mb-4">Night arcade</h3>
+            </div>
+
+            <div class="lg:flex lg:items-end bg-[url(../images/mobile/image-soccer-team.jpg)] lg:bg-[url(../images/desktop/image-soccer-team.jpg)] h-[200px] bg-no-repeat bg-top bg-cover lg:h-[450px] hover:opacity-20">
+              <h3 class="group-hover:text-[#292929] text-white max-w-[180px] text-3xl px-5 mt-26 uppercase leading-8 font-[josefin-sans] lg:mb-4">Soccer team VR</h3>
+            </div>
+
+            <div class="lg:flex lg:items-end bg-[url(../images/mobile/image-grid.jpg)] lg:bg-[url(../images/desktop/image-grid.jpg)] h-[200px] hover:opacity-20 bg-no-repeat bg-top bg-cover lg:h-[450px]">
+              <h3 class="group-hover:text-[#292929] text-white max-w-[180px] text-4xl px-5 mt-26 uppercase leading-8 font-[josefin-sans] lg:mb-4">The grid</h3>
+            </div>
+
+            <div class="group lg:flex lg:items-end bg-[url(../images/mobile/image-from-above.jpg)] lg:bg-[url(../images/desktop/image-from-above.jpg)] h-[200px] hover:opacity-20 bg-no-repeat bg-top bg-cover lg:h-[450px]">
+              <h3 class="group-hover:text-black text-white max-w-[230px] text-4xl px-5 mt-26 uppercase leading-8 font-[josefin-sans] lg:mb-4">From up above VR</h3>
+            </div>
+
+            <div class="group lg:flex lg:items-end bg-[url(../images/mobile/image-pocket-borealis.jpg)] lg:bg-[url(../images/desktop/image-pocket-borealis.jpg)] h-[200px] bg-no-repeat bg-top bg-cover lg:h-[450px] hover:opacity-20">
+              <h3 class="group-hover:text-white text-white max-w-[180px] text-4xl px-5 mt-26 uppercase leading-8 font-[josefin-sans] lg:mb-4">Pocket borealis</h3>
+            </div>
+
+            <div class="group lg:flex lg:items-end bg-[url(../images/mobile/image-curiosity.jpg)] lg:bg-[url(../images/desktop/image-curiosity.jpg)] h-[200px] bg-no-repeat bg-top bg-cover lg:h-[450px] hover:opacity-20">
+              <h3 class="group-hover:text-[#292929] text-white max-w-[200px] text-4xl px-5 mt-26 uppercase leading-8 font-[josefin-sans] lg:mb-4">The curiosity</h3>
+            </div>
+
+            <div class="group lg:flex lg:items-end bg-[url(../images/mobile/image-fisheye.jpg)] lg:bg-[url(../images/desktop/image-fisheye.jpg)] h-[200px] hover:opacity-20 bg-no-repeat bg-top bg-cover lg:h-[450px]">
+              <h3 class="group-hover:text-[#292929] text-white max-w-[180px] text-3xl px-5 mt-26 uppercase leading-8 font-[josefin-sans] lg:mb-4">Make it fisheye</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-black">
+        <div class="mt-20 max-w-[1120px] mx-auto px-5 lg:px-0 text-white p-10 font-[alata]">
+          <div class="lg:flex lg:justify-between items-center">
+            <div class="flex justify-center flex-col items-center gap-7">
+              <img src="images/logo.svg" alt="" />
+
+              <div class="flex flex-col gap-5 items-center lg:flex-row">
+                <a class="link-hover relative" href="#">About</a>
+                <a class="link-hover relative" href="#">Careers</a>
+                <a class="link-hover relative" href="#">Events</a>
+                <a class="link-hover relative" href="#">Products</a>
+                <a class="link-hover relative" href="#">Support</a>
+              </div>
+            </div>
+            <div class="flex justify-center flex-col items-center gap-7">
+              <div class="mt-12 flex gap-6 text-2xl">
+                <a class="hover:text-white link-hover relative" href="#"><i class="bx bxl-facebook-square"></i></a>
+                <a class="hover:text-white link-hover relative" href="#"><i class="bx bxl-twitter"></i></a>
+                <a class="hover:text-white link-hover relative" href="#"><i class="bx bxl-pinterest-alt"></i></a>
+                <a class="hover:text-white link-hover relative" href="#"><i class="bx bxl-instagram"></i></a>
+              </div>
+              <p>© 2021 Loopstudios. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

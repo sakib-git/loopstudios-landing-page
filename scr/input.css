@@ -1,0 +1,103 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Josefin-Sans';
+  src: url(../fonts/josefin-sans-v33-latin-300.woff2);
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'alata';
+  src: url(../fonts/alata-v11-latin-regular.woff2);
+  font-weight: 400;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --pcolor: #7c7c7c;
+  --Grey-200: hsl(0, 0%, 85%);
+  --hover: rgba(0, 0, 255, 0.315);
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.menubtn {
+  display: none;
+}
+
+.close-btn {
+  display: none;
+}
+@media (width < 700px) {
+  .menubtn {
+    display: block;
+  }
+
+  .navigation-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    inset: 0;
+    z-index: 5;
+    background-color: black;
+    padding: 1.5rem;
+    padding-block: 3rem;
+    display: none;
+
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav {
+      height: calc(100% - 3rem);
+      display: grid;
+      align-items: center;
+
+      div {
+        font-family: 'josefin-sans';
+        display: grid;
+        font-size: 2rem;
+        text-transform: uppercase;
+
+        a {
+          padding-block-start: 0.3rem;
+        }
+      }
+    }
+    .nav-menu-close-btn {
+      padding: 0.5rem;
+    }
+  }
+
+  .link-hover:before {
+    display: none;
+  }
+
+  .navigation-container.show {
+    display: block;
+  }
+}
+
+
+
+.link-hover:before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  translate: -50% 100%;
+
+  border-radius: 1rem;
+  width: 0;
+  height: 3px;
+  background-color: white;
+  transition: 300ms;
+}
+
+.link-hover:hover:before {
+  width: 25px;
+}
